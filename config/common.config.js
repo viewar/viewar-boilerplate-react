@@ -5,7 +5,9 @@ const { srcPath, getViewARConfig } = require('./utils');
 const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const { appId, appVersion } = getViewARConfig();
+const { appId, appVersion } = JSON.parse(
+  fs.readFileSync(`${__dirname}/../.viewar-config`)
+);
 
 exports.config = merge([
   {
