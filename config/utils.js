@@ -1,5 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
+const bodyParser = require('body-parser');
+const chalk = require('chalk');
 
 const setFreeVariable = (key, value) => {
   const env = {};
@@ -14,8 +16,27 @@ const root = path.join(__dirname, '..');
 const srcPath = path.join(root, 'src');
 const buildPath = path.join(root, 'build');
 
+// Webpack-dev-server's before function to receive remote console output.
+const before = app => {
+  const colors = {
+    log: 'white',
+    info: 'white',
+    warn: 'yellow',
+    error: 'red',
+  };
+
+  app.use(bodyParser.json());
+  app.post('/remote-console', bodyParser.json(), function(req, res) {
+    const { type, args } = req.body;
+    const time = new Date().toLocaleTimeString();
+    console[type](`[${time}][App]` + chalk[colors[type]](`[${type}]`), ...args);
+    res.send();
+  });
+};
+
 module.exports = {
   setFreeVariable,
   srcPath,
   buildPath,
+  before,
 };
