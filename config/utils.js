@@ -49,5 +49,6 @@ module.exports = {
   setFreeVariable,
   srcPath,
   buildPath,
+  getViewARConfig,
   before,
 };
