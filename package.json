@@ -1,5 +1,5 @@
 {
-  "name": "viewar-react-boilerplate",
+  "name": "VASB-6762_AddVisualizationOfDirections_MinimalApp",
   "version": "1.0.1",
   "description": "React boilerplate app for ViewAR SDK",
   "main": "index.js",
@@ -53,7 +53,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "viewar-api": "^0.47.1",
-    "viewar-core": "^11.34.2"
+    "viewar-api": "^0.50.1",
+    "viewar-core": "^11.41.1"
   }
 }
