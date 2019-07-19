@@ -1,3 +1,13 @@
-import React from 'react';
+import {
+    compose,
+    withProps,
+  } from 'recompose';
+import React, { Fragment }  from 'react';
+import template from './app.jsx';
+import { getDirection } from './utils/directions';
 
-export default () => <h1>ViewAR SDK</h1>;
+export default compose(
+    withProps({
+        getDirection,
+    })
+  )(template);

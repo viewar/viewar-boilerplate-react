@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './remote-console';
-import { getDirection } from './utils/directions';
 
 import viewarApi from 'viewar-api';
 
@@ -9,7 +8,7 @@ import './index.scss';
 
 import App from './app';
 (async function() {
-  window.api = await viewarApi.init();
+  window.api = await viewarApi.init({appId: 'viewar.VASB6762Test'});
 
   const WCSModel = await viewarApi.modelManager.fetchModelFromRepository(
     '19741'

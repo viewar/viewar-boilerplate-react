@@ -1,5 +1,17 @@
 @import '~normalize.css';
 
+.Container {
+  .Arrow {
+    color: red;
+  }
+
+  .RightTop {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,6 +21,6 @@ body {
   overflow: hidden;
 }
 
-.arrow {
-  color: red;
-}
+
+
+

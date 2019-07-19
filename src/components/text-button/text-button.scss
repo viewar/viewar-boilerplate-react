@@ -1,0 +1,36 @@
+.TextButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 1000px;
+    white-space: nowrap;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .isHidden.TextButton {
+    opacity: 0;
+  }
+  
+  .isSelection.TextButton {
+    background-color: white;
+    color: #282f39;
+  }
+  
+  .isInActive.isSelection.TextButton {
+    color: #aaa;
+  }
+  
+  .isActive.isSelection.TextButton {
+    border: 3px solid #bd1819;
+    padding: calc(1rem - 3px) calc(2rem - 3px);
+    box-sizing: border-box;
+  }
+  
+  .isDisabled.TextButton {
+    cursor: auto;
+    background-color: #999;
+  }
+  
