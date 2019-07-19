@@ -2,5 +2,5 @@
 // get the nearest point at the edge of the screen
 
 export const getDirection = () => {
-    return { x: 500, y: 600 };
+    return { x: 500, y: 600, rot: 20 };
 }

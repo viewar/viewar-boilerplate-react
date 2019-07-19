@@ -9,10 +9,10 @@ export default ({
         <div>
             <div className={styles.Container}>
                 <TextButton
-                    style={{bottom: dirPoint.x + 'px', left: dirPoint.y + 'px'}}
+                    style={{bottom: dirPoint.x + 'px', left: dirPoint.y + 'px', transform: 'rotate(' + dirPoint.rot + 'deg)'}}
                     className={styles.Direction}
                     onClick={direction}
-                    label={'Direction'}
+                    label={'<--'}
                 />
             </div>
         </div>
