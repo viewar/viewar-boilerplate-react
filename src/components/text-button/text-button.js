@@ -13,6 +13,7 @@ export default ({
   className,
   onClick,
   disabled,
+  ...props,
 }) => (
   <div
     className={cx(
@@ -24,9 +25,10 @@ export default ({
       active && styles.isActive,
       inActive && styles.isInActive,
       disabled && styles.isDisabled,
-      className
+      className,
     )}
     onClick={() => onClick && !disabled && onClick()}
+    {...props}
   >
     {label}
   </div>

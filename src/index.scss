@@ -1,7 +1,8 @@
 @import '~normalize.css';
 
 .Container {
-  .Arrow {
+  .Direction {
+    position: absolute;
     color: red;
   }
 
