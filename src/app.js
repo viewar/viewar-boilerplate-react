@@ -10,11 +10,9 @@ import { getDirection } from './utils/directions';
 
 let updateInterval = 0;
 const direction = ({setDirPoint}) => async () => {
-    updateInterval = setInterval(() => {
-        setDirPoint(getDirection());
-        console.log(getDirection());
-    }, 1000);
-    
+    updateInterval = setInterval(async () => {
+        setDirPoint(await getDirection());
+    }, 25);
 }
 
 export default compose(
