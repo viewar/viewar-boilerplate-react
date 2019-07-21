@@ -12,7 +12,7 @@ export default ({
                     style={{left: dirPoint.x, top: dirPoint.y, transform: 'rotate(' + dirPoint.rot + ')', display: dirPoint.display}}
                     className={styles.Direction}
                     onClick={direction}
-                    label={'.'}
+                    label={'>'}
                 />
             </div>
         </div>
