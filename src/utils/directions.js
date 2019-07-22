@@ -36,8 +36,8 @@ export const getDirection = async ( xCoord, yCoord, zCoord ) => {
     }
     if (x0 === 0 && y0 >= offset) { x1 = 0; y1 = offset; }
     if (x0 === 0 && y0 < offset) { x1 = 0; y1 = offset * (-1); }
-    if (y0 === 0 && x0 >= offset) { x1 = offset; y1 = 0; }
-    if (y0 === 0 && x0 < offset) { x1 = offset * (-1); y1 = 0; }
+    if (x0 >= offset && y0 === 0) { x1 = offset; y1 = 0; }
+    if (x0 < offset && y0 === 0) { x1 = offset * (-1); y1 = 0; }
     rad = Math.atan2(y1, x1);
     return { x: (x1 + offset) + '%', y: (y1 + offset) + '%', rot: rad + 'rad', display: 'block'};
 

@@ -8,13 +8,16 @@ import React, { Fragment }  from 'react';
 import template from './app.jsx';
 import { getDirection } from './utils/directions';
 
-const REFRESH = 25 // ms
+const refresh = 25 // ms
 
 let updateInterval = 0;
-const direction = ({setDirPoint}) => async () => {
+const direction = ({
+    setDirPoint,
+    tracking,
+}) => async () => {
     updateInterval = setInterval(async () => {
         setDirPoint(await getDirection(0, 0, 0));
-    }, REFRESH);
+    }, refresh);
 }
 
 export default compose(
