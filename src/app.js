@@ -22,13 +22,15 @@ const direction = ({
 
 export default compose(
     withState('direction', 'setDirection', false),
-    withState('dirPoint', 'setDirPoint', { x: 0, y:0, rot: 0, display: 'block' }),
+    withState('dirPoint', 'setDirPoint', { x: 0, y:0, rot: 0, display: 'none' }),
     withHandlers({ 
         direction,
     }),
     lifecycle({
         componentDidMount() {
           this.props.direction();
+        },
+        componentWillUnmount() {
         },
       })
   )(template);
