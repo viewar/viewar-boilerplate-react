@@ -7,7 +7,10 @@
 import viewarApi from 'viewar-api';
 
 export const getDirection = async ( xCoord, yCoord, zCoord ) => {
-    const screen = await viewarApi.coreInterface.call('getScreenSpaceCoordinates', JSON.stringify([ { x: xCoord, y: yCoord, z: zCoord }]));
+    let screen;
+    if(viewarApi.tracker) {
+        screen = await viewarApi.coreInterface.call('getScreenSpaceCoordinates', JSON.stringify([ { x: xCoord, y: yCoord, z: zCoord }]));
+    }
     if ((!screen) || screen[0].x === 'undefined' || screen[0].x === 'null' || screen[0].y === 'undefined' || screen[0].y === 'null') {
         return { x: 0, y: 0, rot: 0, display: 'none'};
     }

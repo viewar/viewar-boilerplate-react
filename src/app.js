@@ -1,5 +1,6 @@
 import {
     compose,
+    lifecycle,
     withProps,
     withHandlers,
     withState,
@@ -13,12 +14,11 @@ const refresh = 25 // ms
 let updateInterval = 0;
 const direction = ({
     setDirPoint,
-    tracking,
 }) => async () => {
-    updateInterval = setInterval(async () => {
-        setDirPoint(await getDirection(0, 0, 0));
-    }, refresh);
-}
+        updateInterval = setInterval(async () => {
+            setDirPoint(await getDirection(0, 0, 0));
+        }, refresh);
+    }
 
 export default compose(
     withState('direction', 'setDirection', false),
@@ -26,4 +26,9 @@ export default compose(
     withHandlers({ 
         direction,
     }),
+    lifecycle({
+        componentDidMount() {
+          this.props.direction();
+        },
+      })
   )(template);
