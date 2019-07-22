@@ -30,7 +30,6 @@ export const getDirection = async () => {
             y1 > OFFSET ? y1 = OFFSET : y1 = OFFSET * (-1);
             x1 = x1 * yScale;
         }
-        rad = Math.atan2(y1, x1);
     } 
     if (x0 === 0 && y0 >= OFFSET) { x1 = 0; y1 = OFFSET; }
     if (x0 === 0 && y0 < OFFSET) { x1 = 0; y1 = OFFSET * (-1); }
