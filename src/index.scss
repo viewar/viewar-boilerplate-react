@@ -1,16 +1,28 @@
 @import '~normalize.css';
 
 .Container {
-  .Direction {
-    position: absolute;
+  .Arrow {
+    position: relative;
     color: white;
     background-color: red;
+    padding: 2px 7px;
+    height: 19px;
+    font-size: 1rem;
+    border-radius: 1000px;
+    font-weight: bold;
+    align-items: center;
   }
 
-  .RightTop {
+  .ArrowMargin {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 255, 0, 0.1);
+    padding: 0px 23px 23px 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    
   }
 }
 

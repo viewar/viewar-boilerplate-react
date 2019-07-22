@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import styles from './text-button.scss';
+import styles from './offscreen-arrow.scss';
 import global from '../../css/global.scss'
 
 export default ({

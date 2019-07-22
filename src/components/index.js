@@ -1,2 +1,2 @@
-export { default as TextButton } from './text-button/text-button';
+export { default as OffscreenArrow } from './offscreen-arrow/offscreen-arrow';
   
