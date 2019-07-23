@@ -1,5 +1,21 @@
-.TextButton {
-  cursor: pointer;
-  }
+.ArrowMargin {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0px 23px 23px 0px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
 
-  
+.Arrow {
+  position: relative;
+  color: white;
+  background-color: red;
+  padding: 2px 7px;
+  height: 19px;
+  font-size: 1rem;
+  border-radius: 1000px;
+  font-weight: bold;
+  align-items: center;
+}

@@ -1,35 +1,27 @@
-import React from 'react';
-import cx from 'classnames';
+import { compose, withState, withHandlers, lifecycle } from 'recompose';
 
-import styles from './offscreen-arrow.scss';
-import global from '../../css/global.scss'
+import OffscreenArrow from './offscreen-arrow.jsx';
+import { getDirection } from '../../utils/directions';
 
-export default ({
-  label,
-  hidden,
-  selection,
-  active,
-  inActive,
-  className,
-  onClick,
-  disabled,
-  ...props,
-}) => (
-  <div
-    className={cx(
-      styles.TextButton,
-      global.TextButtonColor,
-      global.TextButtonBackgroundColor,
-      hidden && styles.isHidden,
-      selection && styles.isSelection,
-      active && styles.isActive,
-      inActive && styles.isInActive,
-      disabled && styles.isDisabled,
-      className,
-    )}
-    onClick={() => onClick && !disabled && onClick()}
-    {...props}
-  >
-    {label}
-  </div>
-);
+const refresh = 25; // ms
+
+let updateInterval = 0;
+const direction = ({ setDirPoint }) => async () => {
+  updateInterval = setInterval(async () => {
+    setDirPoint(await getDirection(0, 0, 0));
+  }, refresh);
+};
+
+export default compose(
+  withState('direction', 'setDirection', false),
+  withState('dirPoint', 'setDirPoint', { x: 0, y: 0, rot: 0, display: 'none' }),
+  withHandlers({
+    direction,
+  }),
+  lifecycle({
+    componentDidMount() {
+      this.props.direction();
+    },
+    componentWillUnmount() {},
+  })
+)(OffscreenArrow);
