@@ -1,3 +1,4 @@
+const fs = require('fs');
 const webpack = require('webpack');
 const path = require('path');
 const bodyParser = require('body-parser');
