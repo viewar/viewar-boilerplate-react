@@ -2,3 +2,4 @@ node_modules/
 build/
 .viewar-config
 npm-debug.log
+package-lock.json
