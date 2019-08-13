@@ -18,7 +18,7 @@ const buildPath = path.join(root, 'build');
 
 const getViewARConfig = () => {
   try {
-    return JSON.parse(fs.readFileSync(`${__dirname}/../.viewar-config`));
+    return JSON.parse(fs.readFileSync(path.join(root, '.viewar-config')));
   } catch (e) {
     console.error(
       '[ViewAR] ERROR: File .viewar-config not existing or invalid JSON format.'
