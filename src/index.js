@@ -1,22 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './remote-console';
-
 import viewarApi from 'viewar-api';
 
+import App from './app';
+
+import './remote-console';
 import './index.scss';
 
-import App from './app';
 (async function() {
   window.api = await viewarApi.init();
 
   const rootElement = document.getElementById('app');
 
-  const render = Component => {
-    ReactDOM.render(
-      <Component />,
-      rootElement
-    );
+  const render = (Component) => {
+    ReactDOM.render(<Component />, rootElement);
   };
 
   render(App);
@@ -27,9 +24,7 @@ import App from './app';
     });
   }
 
-  const sheepModel = await viewarApi.modelManager.fetchModelFromRepository(
-    '20'
-  );
+  const sheepModel = await viewarApi.modelManager.fetchModelFromRepository('20');
 
   for (let x = 0; x < 20; ++x) {
     await viewarApi.sceneManager.insertModel(sheepModel, {
@@ -44,8 +39,8 @@ import App from './app';
   }
 
   console.log('log', {
-    'a': 1234,
-    'b': '5678',
+    a: 1234,
+    b: '5678',
   });
   console.info('info');
   console.warn('warn');
