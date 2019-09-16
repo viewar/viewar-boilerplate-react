@@ -7,18 +7,18 @@ const { setFreeVariable, buildPath, before } = require('../utils');
 exports.config = merge([
   {
     devServer: {
-      public: ip ? `${ip}:${process.env.PORT || '8080'}` : undefined,
-      host: process.env.HOST || '0.0.0.0',
-      port: process.env.PORT,
+      'public':      ip ? `${ip}:${process.env.PORT || '8080'}` : null,
+      host:        process.env.HOST || '0.0.0.0',
+      port:        process.env.PORT,
       contentBase: buildPath,
-      hot: true,
+      hot:         true,
       before,
     },
     devtool: 'inline-source-map',
-    output: {
+    output:  {
       devtoolModuleFilenameTemplate: 'webpack:///[absolute-resource-path]',
     },
-    plugins: [new webpack.HotModuleReplacementPlugin()],
+    plugins: [ new webpack.HotModuleReplacementPlugin() ],
   },
   setFreeVariable('process.env.NODE_ENV', 'development'),
 ]);

@@ -1,41 +1,41 @@
 const merge = require('webpack-merge');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { srcPath, getViewARConfig } = require('./utils');
-const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const { srcPath, getViewARConfig } = require('./utils');
 
 const { appId, appVersion } = getViewARConfig();
 
 exports.config = merge([
   {
     entry: {
-      index: [srcPath + '/polyfills.js', srcPath],
+      index: [ srcPath + '/polyfills.js', srcPath ],
     },
     module: {
       rules: [
         {
-          test: /\.(js|jsx)$/,
+          test:    /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: ['babel-loader'],
+          use:     [ 'babel-loader' ],
         },
         {
           test: /\.s?css$/,
-          use: [
+          use:  [
             'style-loader',
             {
-              loader: 'css-loader',
+              loader:  'css-loader',
               options: {
-                importLoaders: 1,
-                modules: true,
+                importLoaders:  1,
+                modules:        true,
                 localIdentName: '[name]-[local]',
               },
             },
             {
-              loader: 'postcss-loader',
+              loader:  'postcss-loader',
               options: {
-                ident: 'postcss',
-                plugins: loader => [require('postcss-preset-env')()],
+                ident:   'postcss',
+                plugins: (loader) => [ require('postcss-preset-env')() ],
               },
             },
             'sass-loader',
@@ -43,8 +43,8 @@ exports.config = merge([
         },
         {
           test: /\.(eot|ttf|otf|woff2?)(\?v=\d+\.\d+\.\d+)?|png|jpe?g|svg|gif|ico$/,
-          use: {
-            loader: 'file-loader',
+          use:  {
+            loader:  'file-loader',
             options: {
               name: '[path][name].[ext]',
             },
@@ -53,17 +53,17 @@ exports.config = merge([
       ],
     },
     resolve: {
-      extensions: ['*', '.js', '.jsx'],
+      extensions: [ '*', '.js', '.jsx' ],
     },
     plugins: [
       new MiniCssExtractPlugin({
         filename: '[name].scss',
       }),
       new HtmlWebpackPlugin({
-        template: path.join(srcPath, 'index.html'),
-        inject: true,
+        template:         path.join(srcPath, 'index.html'),
+        inject:           true,
         bundleIdentifier: appId,
-        bundleVersion: appVersion,
+        bundleVersion:    appVersion,
       }),
     ],
   },
