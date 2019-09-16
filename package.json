@@ -10,7 +10,7 @@
     "start": "npm run clean && webpack-dev-server --config ./config/webpack.config.js --open --mode development --env development_core",
     "start:mock": "npm run clean && webpack-dev-server --config ./config/webpack.config.js --open --mode development --env development_mock",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --single-quote --trailing-comma es5 'src/**/*.{js,jsx,css,scss,md,json}' --write",
+    "format": "prettier --single-quote --trailing-comma es5 'src/**/*.{css,scss,md,json}' --write",
     "lint": "eslint . --format pretty --fix"
   },
   "author": "Karl Hofer <kh@viewar.com>",
