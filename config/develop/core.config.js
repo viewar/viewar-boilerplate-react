@@ -10,7 +10,7 @@ exports.config = merge([
         [
           {
             from: 'node_modules/viewar-core/viewar-core.js',
-            to: 'viewar-core.js',
+            to:   'viewar-core.js',
           },
         ],
         {

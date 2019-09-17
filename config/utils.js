@@ -9,7 +9,7 @@ const setFreeVariable = (key, value) => {
   env[key] = JSON.stringify(value);
 
   return {
-    plugins: [new webpack.DefinePlugin(env)],
+    plugins: [ new webpack.DefinePlugin(env) ],
   };
 };
 
@@ -20,7 +20,8 @@ const buildPath = path.join(root, 'build');
 const getViewARConfig = () => {
   try {
     return JSON.parse(fs.readFileSync(path.join(root, '.viewar-config')));
-  } catch (e) {
+  }
+  catch (e) {
     console.error(
       '[ViewAR] ERROR: File .viewar-config not existing or invalid JSON format.'
     );
@@ -29,11 +30,11 @@ const getViewARConfig = () => {
 };
 
 // Webpack-dev-server's before function to receive remote console output.
-const before = app => {
+const before = (app) => {
   const colors = {
-    log: 'white',
-    info: 'white',
-    warn: 'yellow',
+    log:   'white',
+    info:  'white',
+    warn:  'yellow',
     error: 'red',
   };
 
