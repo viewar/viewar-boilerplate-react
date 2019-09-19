@@ -36,4 +36,4 @@ workflows:
             - lint_and_build
           filters:
             branches:
-              only: feature/semanticRelease
+              only: master

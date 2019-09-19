@@ -1,5 +1,5 @@
 {
-  "branch": "feature/semanticRelease",
+  "branch": "master",
   "repositoryUrl": "https://github.com/viewar/viewar-boilerplate-react.git",
   "plugins": [
    [
@@ -40,6 +40,23 @@
         "changelogFile": "CHANGELOG.md",
         "changelogTitle": "# Changelog\n> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)"
       }
+    ],
+    ["@semantic-release/npm", {
+      "npmPublish": false,
+      "tarballDir": "releases",
+    }],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "package.json"
+        ],
+        "message": "chore(release): 🔖 ${nextRelease.version} 🚀 released by 🤖 'semantic-release' via 👷 CircleCI \n\n${nextRelease.notes}"
+      }
+    ],
+    [
+      "@semantic-release/github"
     ]
   ]
 }
