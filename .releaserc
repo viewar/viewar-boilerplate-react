@@ -1,6 +1,6 @@
 {
   "branch": "feature/semanticRelease",
-  "repositoryUrl": "https://github.com/doubleu23/eslint-config-viewar.git",
+  "repositoryUrl": "https://github.com/viewar/viewar-boilerplate-react.git",
   "plugins": [
    [
     "@semantic-release/commit-analyzer",
