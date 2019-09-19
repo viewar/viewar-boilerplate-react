@@ -14,9 +14,26 @@ jobs:
       - run:
           name: Build
           command: npm run build
+  semantic_release:
+    docker:
+      - image: circleci/node:12.9.0
+    steps:
+      - checkout
+      - run:
+          name: Setup
+          command: npm install
+      - run:
+          name: Release to GitHub
+          command: npx semantic-release
 
 workflows:
   version: 2
   test:
     jobs:
       - lint_and_build
+      - semantic_release:
+          requires:
+            - lint_and_build
+          filters:
+            branches:
+              only: master
