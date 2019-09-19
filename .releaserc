@@ -1,5 +1,5 @@
 {
-  "branch": "master",
+  "branch": "feature/semanticRelease",
   "repositoryUrl": "https://github.com/doubleu23/eslint-config-viewar.git",
   "plugins": [
    [
