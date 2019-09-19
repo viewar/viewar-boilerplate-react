@@ -1,13 +1,15 @@
 # ViewAR react sample
 
+[![CircleCI](https://circleci.com/gh/viewar/viewar-boilerplate-react/tree/master.svg?style=svg)](https://circleci.com/gh/viewar/viewar-boilerplate-react/tree/master)
+
 This sample project demonstrates a basic usage of the [ViewAR Api](https://www.npmjs.com/package/viewar-api) using React.
 
 #### Features:
 
- *  Insert models into 3D scene 
- *  Move, rotate models in the scene
- *  Remove models
- *  Change materials of models
+- Insert models into 3D scene
+- Move, rotate models in the scene
+- Remove models
+- Change materials of models
 
 ## Install
 
@@ -25,7 +27,7 @@ viewar-cli login
 ```
 
 Create a new project directory and navigate via terminal into it. Use the following command
-to start a wizard which will help you with the initialization of a new [ViewAR](https://www.viewar.com/) project: 
+to start a wizard which will help you with the initialization of a new [ViewAR](https://www.viewar.com/) project:
 
 ```bash
 viewar-cli init
@@ -37,30 +39,27 @@ viewar-cli init
 4. Enter a desired app version (default: 1.0)
 5. In the last step you may choose any of the trackers, since they are not used in this sample.
 
-
-## Development 
-
+## Development
 
 Visit https://webversion.viewar.com/YOUR-BUNDLE/YOUR-VERSION/ to run your app in the browser. (For example: https://webversion.viewar.com/com.myCompany.ARapp/1.0/)
 
 To start the local development server with WebGL support enter:
-  
-```bash 
+
+```bash
 npm run start
 ```
 
 The local development server without WebGL support (mock mode) will enable you faster development of the ui. To start the mock mode enter:
-  
-```bash 
+
+```bash
 npm run start:mock
 ```
-  
 
 ## Deployment
 
 to deploy your changes enter
 
-```bash 
+```bash
 viewar-cli deploy YOUR-BUNDLE YOUR-VERSION
 ```
 
@@ -75,4 +74,3 @@ Permission to use, copy, modify, and/or distribute this software for any purpose
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 Source: http://opensource.org/licenses/ISC
-
