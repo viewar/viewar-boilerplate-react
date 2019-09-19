@@ -1,0 +1,22 @@
+version: 2.1
+jobs:
+  lint_and_build:
+    docker:
+      - image: circleci/node:12.9.0
+    steps:
+      - checkout
+      - run:
+          name: Setup (npm)
+          command: npm install
+      - run:
+          name: Format Code (prettier)
+          command: npm run format
+      - run:
+          name: Build
+          command: npm run build
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - lint_and_build
