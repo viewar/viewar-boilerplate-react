@@ -1,5 +1,4 @@
 {
-  // FORMATATION and LINTING
   "javascript.implicitProjectConfig.checkJs": true,
   "javascript.validate.enable": false,
   "javascript.format.enable": false,
