@@ -1,19 +1,20 @@
 const merge = require('webpack-merge');
+
 const { setFreeVariable, buildPath } = require('./utils');
 
 exports.config = merge([
   {
     output: {
-      path: buildPath,
+      path:          buildPath,
       chunkFilename: '[name].js',
-      filename: '[name].js',
+      filename:      '[name].js',
     },
     optimization: {
       splitChunks: {
-        chunks: 'all',
+        chunks:      'all',
         cacheGroups: {
           vendor: {
-            test: /[\\/]node_modules[\\/]/,
+            test:     /[\\/]node_modules[\\/]/,
             priority: 1,
           },
         },

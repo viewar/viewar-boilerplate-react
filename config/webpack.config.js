@@ -6,7 +6,7 @@ const develop = require('./develop/develop.config');
 const mock = require('./develop/mock.config');
 const core = require('./develop/core.config');
 
-module.exports = env => {
+module.exports = (env) => {
   if (env === 'production') {
     console.log('using production mode');
     return merge(common.config, production.config);

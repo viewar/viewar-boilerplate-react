@@ -9,8 +9,8 @@
     "build": "npm run clean && webpack -p --config ./config/webpack.config.js --mode production --env production",
     "start": "npm run clean && webpack-dev-server --config ./config/webpack.config.js --open --mode development --env development_core",
     "start:mock": "npm run clean && webpack-dev-server --config ./config/webpack.config.js --open --mode development --env development_mock",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --single-quote --trailing-comma es5 'src/**/*.{js,jsx,css,scss,md,json}' --write"
+    "test": "npm run lint && npm run build",
+    "lint": "npm run clean && eslint . --format pretty --fix && prettier ./src/**/*.{css,scss,md,json} --write --loglevel silent"
   },
   "author": "Karl Hofer <kh@viewar.com>",
   "license": "MIT",
@@ -37,6 +37,7 @@
     "chalk": "^2.4.2",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^2.1.0",
+    "eslint-config-viewar": "git+https://bitbucket.org/viewar_sf/eslint-config-viewar.git",
     "file-loader": "^3.0.1",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.5.0",
