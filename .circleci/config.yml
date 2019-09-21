@@ -42,4 +42,4 @@ workflows:
             - lint_and_build
           filters:
             branches:
-              only: master
+              only: next
