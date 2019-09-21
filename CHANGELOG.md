@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+# [1.2.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.1.0...v1.2.0) (2019-09-21)
+
+
+### Features
+
+* use 'eslint-config-viewar' (npm run lint) ([2b60f3f](https://github.com/viewar/viewar-boilerplate-react/commit/2b60f3f))
+
 # [1.1.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.0.2...v1.1.0) (2019-09-19)
 
 
