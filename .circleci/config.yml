@@ -6,11 +6,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Setup (npm)
+          name: Setup
           command: npm install
       - run:
-          name: Format Code (prettier)
-          command: npm run format
+          name: lint and format
+          command: npm run lint
       - run:
           name: Build
           command: npm run build
@@ -25,6 +25,12 @@ jobs:
       - run:
           name: Release to GitHub
           command: npx semantic-release
+      - run:
+          name: Push Code to Bitbucket
+          command: git push https://viewar_sf:${BB_APP_PW}@bitbucket.org/viewar_sf/viewar-boilerplate-react.git
+      - run:
+          name: Push Tags to Bitbucket
+          command: git push https://viewar_sf:${BB_APP_PW}@bitbucket.org/viewar_sf/viewar-boilerplate-react.git --tags
 
 workflows:
   version: 2
