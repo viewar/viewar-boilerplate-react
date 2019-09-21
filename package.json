@@ -13,7 +13,7 @@
     "lint": "npm run clean && eslint . --format pretty --fix && prettier ./src/**/*.{css,scss,md,json} --write --loglevel silent"
   },
   "author": "Karl Hofer <kh@viewar.com>",
-  "license": "MIT",
+  "license": "ISC",
   "babel": {
     "presets": [
       "@babel/preset-env",
