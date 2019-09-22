@@ -43,4 +43,4 @@ workflows:
           filters:
             branches:
               # release per github PR
-              only: master
+              only: next
