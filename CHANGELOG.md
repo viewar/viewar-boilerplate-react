@@ -1,6 +1,18 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+# [1.3.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.2.0...v1.3.0) (2019-09-22)
+
+
+### Bug Fixes
+
+* **filename:** commit unstaged rename ([2291aac](https://github.com/viewar/viewar-boilerplate-react/commit/2291aac))
+
+
+### Features
+
+* **@viewar/webpack:** use pckg from github ([d027d08](https://github.com/viewar/viewar-boilerplate-react/commit/d027d08))
+
 # [1.2.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.1.0...v1.2.0) (2019-09-21)
 
 
