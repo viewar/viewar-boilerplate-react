@@ -42,4 +42,5 @@ workflows:
             - lint_and_build
           filters:
             branches:
-              only: next
+              # release per github PR
+              only: master
