@@ -1,4 +1,3 @@
-import React    from 'react';
 import ReactDOM from 'react-dom';
 import viewarApi from 'viewar-api';
 
@@ -10,7 +9,7 @@ import './remote-console';
   window.api        = await viewarApi.init();
   const rootElement = document.getElementById('app');
 
-  ReactDOM.render(<App />, rootElement);
+  ReactDOM.render(App, rootElement);
 
   if (module.hot) {
     module.hot.accept(App, () => {
