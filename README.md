@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/viewar/viewar-boilerplate-react.svg?branch=master)](https://travis-ci.com/viewar/viewar-boilerplate-react)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=viewar/viewar-boilerplate-react)](https://dependabot.com)
-[![PRs Welcome][pr-welcome]](http://makeapullrequest.com)<br />
+[![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 [![Conventional Commits](https://img.shields.io/badge/✔-Conventional%20Commits-blue.svg)](https://conventionalcommits.org)
 [![Semantic Versioning][semantic-img]][semantic-url]
 
@@ -14,7 +14,7 @@
 
 <!-- /badge-urls -->
 
-This sample project demonstrates a basic usage of the [ViewAR Api](https://www.npmjs.com/package/viewar-api) using React.
+> **This sample project demonstrates a basic usage of the [ViewAR Api](https://www.npmjs.com/package/viewar-api) using React.**
 
 #### Features:
 
