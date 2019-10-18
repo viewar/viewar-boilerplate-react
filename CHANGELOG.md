@@ -1,4 +1,14 @@
 # Changelog
+> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
+
+## [1.3.2](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.1...v1.3.2) (2019-10-18)
+
+
+### Bug Fixes
+
+* merge dependency updates ([#17](https://github.com/viewar/viewar-boilerplate-react/issues/17)) ([580c3a3](https://github.com/viewar/viewar-boilerplate-react/commit/580c3a314f8c71158a077b2fa00b528c20c806ed)), closes [#14](https://github.com/viewar/viewar-boilerplate-react/issues/14) [#16](https://github.com/viewar/viewar-boilerplate-react/issues/16)
+
+# Changelog
 
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
