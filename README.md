@@ -1,10 +1,11 @@
 # ViewAR react sample
 
-[![CircleCI status][circle-ci-status-img]](https://circleci.com/gh/viewar/viewar-boilerplate-react/tree/master)
-[![semantic-release badge][semantic-release-img]](https://github.com/semantic-release/semantic-release)
+[![Build Status](https://travis-ci.com/viewar/viewar-boilerplate-react.svg?&branch=master)](https://travis-ci.com/viewar/viewar-boilerplate-react)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=viewar/viewar-boilerplate-react)](https://dependabot.com)
+[![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
+[![Conventional Commits](https://img.shields.io/badge/✔-Conventional%20Commits-blue.svg)](https://conventionalcommits.org)
 
-[circle-ci-status-img]: https://circleci.com/gh/viewar/viewar-boilerplate-react.svg?style=svg
-[semantic-release-img]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[pr-welcome]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 
 This sample project demonstrates a basic usage of the [ViewAR Api](https://www.npmjs.com/package/viewar-api) using React.
 
