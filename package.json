@@ -64,7 +64,7 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "normalize.css": "^8.0.1",
-    "viewar-api": "^0.47.1",
+    "viewar-api": "^0.56.1",
     "viewar-core": "^11.34.2"
   }
 }
