@@ -20,7 +20,7 @@
       "@babel/preset-react"
     ]
   },
-  "repository": "https://github.com/viewar/viewar-boilerplate-react.git",
+  "repository": "https://github.com/viewar/viewar-boilerplate-react",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
