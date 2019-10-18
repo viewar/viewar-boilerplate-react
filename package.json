@@ -36,7 +36,7 @@
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.0",
     "chalk": "^2.4.2",
-    "copy-webpack-plugin": "^4.6.0",
+    "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^2.1.0",
     "eslint": "^6.4.0",
     "eslint-config-viewar": "git+https://github.com/DoubleU23/eslint-config-viewar.git",
@@ -64,7 +64,7 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "normalize.css": "^8.0.1",
-    "viewar-api": "^0.47.1",
+    "viewar-api": "^0.56.1",
     "viewar-core": "^11.34.2"
   }
 }

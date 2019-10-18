@@ -1,8 +1,8 @@
 # Changelog
+
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
 ## [1.3.1](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.0...v1.3.1) (2019-10-18)
-
 
 ### Bug Fixes
 
