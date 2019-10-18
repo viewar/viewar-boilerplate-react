@@ -2,6 +2,17 @@
 
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [1.3.1](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.0...v1.3.1) (2019-10-18)
+
+### Bug Fixes
+
+* migrate to GitHub ([#10](https://github.com/viewar/viewar-boilerplate-react/issues/10)) ([#11](https://github.com/viewar/viewar-boilerplate-react/issues/11)) ([b8a7653](https://github.com/viewar/viewar-boilerplate-react/commit/b8a7653936769c76fdb4833745237e79e157ae0a))
+* **lint:** use .jsx files (v1.3.0 of 'eslint-config-viewar') ([a54f5a7](https://github.com/viewar/viewar-boilerplate-react/commit/a54f5a71af22eb7e353bb668a4b1dda8a877cb56))
+
+# Changelog
+
+> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
+
 # [1.3.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.2.0...v1.3.0) (2019-09-22)
 
 ### Bug Fixes
