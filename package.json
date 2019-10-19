@@ -53,7 +53,7 @@
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.3.12",
     "rimraf": "^3.0.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^8.0.0",
     "semantic-release-cli": "^5.2.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.40.2",
