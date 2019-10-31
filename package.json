@@ -1,6 +1,6 @@
 {
   "name": "viewar-react-boilerplate",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "React boilerplate app for ViewAR SDK",
   "main": "index.js",
   "scripts": {
@@ -37,6 +37,7 @@
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.0",
     "chalk": "^2.4.2",
+    "css-loader": "^3.2.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.4.0",
