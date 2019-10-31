@@ -1,4 +1,18 @@
 # Changelog
+> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
+
+## [1.3.4](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.3...v1.3.4) (2019-10-31)
+
+
+### Bug Fixes
+
+* **deps:** `npm i -D eslint` ([4e9deff](https://github.com/viewar/viewar-boilerplate-react/commit/4e9deff8e078b0e688a1463cc3a060e4e3f897f0))
+* migrate to GitHub ([#10](https://github.com/viewar/viewar-boilerplate-react/issues/10)) ([7aaa457](https://github.com/viewar/viewar-boilerplate-react/commit/7aaa4570cd237757de17920f64adc2b72a663f28))
+* set eslint config to new released '@viewar/config-eslint' ([55160d0](https://github.com/viewar/viewar-boilerplate-react/commit/55160d0fee6ba3e3fb90ffde83cacc478cb1a415))
+* **deps:** update '@viewar/config-eslint' ([c95195f](https://github.com/viewar/viewar-boilerplate-react/commit/c95195fe51c527075e7c232bf2a4f633f9279ad3))
+* **deps:** use '@viewar/webpack' and '@viewar/config-eslint' from NPM registry ([72953bc](https://github.com/viewar/viewar-boilerplate-react/commit/72953bcfb740ddee816c078f252364ce9572c0fa))
+
+# Changelog
 
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
