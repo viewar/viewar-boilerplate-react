@@ -48,8 +48,6 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.5.0",
     "prettier": "^1.15.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
     "react-hot-loader": "^4.3.12",
     "rimraf": "^3.0.0",
     "sass-loader": "^8.0.0",
@@ -64,6 +62,8 @@
     "@babel/polyfill": "^7.6.0",
     "fastclick": "^1.0.6",
     "normalize.css": "^8.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "viewar-api": "^0.56.1",
     "viewar-core": "^11.34.2"
   }
