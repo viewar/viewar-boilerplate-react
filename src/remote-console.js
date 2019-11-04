@@ -27,7 +27,7 @@ const remoteConsole = (type, args) => {
     JSON.stringify({
       type,
       args,
-    })
+    }),
   );
 };
 
