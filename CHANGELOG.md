@@ -3,7 +3,6 @@
 
 ## [1.3.5](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.4...v1.3.5) (2019-11-04)
 
-
 ### Bug Fixes
 
 * **deps:** remove 'semantic-release' modules from package.json ([#26](https://github.com/viewar/viewar-boilerplate-react/issues/26)) ([245f5a7](https://github.com/viewar/viewar-boilerplate-react/commit/245f5a7897c6317182ac960069d0320aac30c63f))
