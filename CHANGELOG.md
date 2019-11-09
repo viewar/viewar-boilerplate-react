@@ -3,7 +3,6 @@
 
 # [1.4.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.5...v1.4.0) (2019-11-09)
 
-
 ### Features
 
 * **karma:** run integration tests via '@viewar/webpack/karma' ([#28](https://github.com/viewar/viewar-boilerplate-react/issues/28)) ([9f6aed0](https://github.com/viewar/viewar-boilerplate-react/commit/9f6aed05ac5abc3662b1f761ded067c8c4bcf600))
