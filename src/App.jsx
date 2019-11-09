@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <h1>ViewAR SDK</h1>);
+      <h1 id="app_headline">ViewAR SDK</h1>);
   }
 }
 
