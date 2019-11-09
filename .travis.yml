@@ -1,3 +1,6 @@
+dist: trusty # needs Ubuntu Trusty
+# Note: if you switch to sudo: false, you'll need to launch Chrome with --no-sandbox.
+# See https://github.com/travis-ci/travis-ci/issues/8836
 language: node_js
 node_js:
   - 12
@@ -21,6 +24,7 @@ install: npm install
 
 script:
   - npm run lint
+  - npm run karma
   - npm run build
 
 before_deploy:
