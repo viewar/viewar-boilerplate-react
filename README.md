@@ -67,6 +67,22 @@ The local development server without WebGL support (mock mode) will enable you f
 npm run start:mock
 ```
 
+## Testing
+
+to run [karma](https://karma-runner.github.io/latest/index.html) integration tests
+
+```bash
+npm run karma
+```
+
+- scans your '/src' folder for '\*.spec.js' files for defined tests
+- starts real Chrome engine
+- uses [chai-enzyme](https://github.com/producthunt/chai-enzyme) for assertions  
+  which is exposed to `global`
+
+As example to write your own tests, have a look at `/src/App.spec.js`  
+or check the API of [chai-enzyme](https://github.com/producthunt/chai-enzyme)
+
 ## Deployment
 
 to deploy your changes enter
