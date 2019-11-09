@@ -67,6 +67,17 @@ The local development server without WebGL support (mock mode) will enable you f
 npm run start:mock
 ```
 
+## Testing
+
+to run [karma](https://karma-runner.github.io/latest/index.html) integration tests
+
+```bash
+npm run karma
+```
+
+As example to write your own tests, have a look at `/src/App.spec.js`  
+For more information see [@viewar/webpack#karma](https://github.com/viewar/webpack#integration-tests-per-karma-webpack)
+
 ## Deployment
 
 to deploy your changes enter
