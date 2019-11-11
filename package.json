@@ -1,6 +1,6 @@
 {
   "name": "viewar-react-boilerplate",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "React boilerplate app for ViewAR SDK",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "start": "npm run clean && webpack-dev-server --open --mode development --env development_core",
     "start:mock": "npm run clean && webpack-dev-server --open --mode development --env development_mock",
     "karma": "karma start ./node_modules/@viewar/webpack/karma",
-    "test": "npm run lint && npm run build",
+    "test": "npm run lint && npm run karma",
     "lint": "npm run clean && eslint . --format pretty --fix && prettier ./src/**/*.{css,scss,md,json} --write --loglevel silent"
   },
   "author": "Karl Hofer <kh@viewar.com>",
