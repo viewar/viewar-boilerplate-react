@@ -75,13 +75,8 @@ to run [karma](https://karma-runner.github.io/latest/index.html) integration tes
 npm run karma
 ```
 
-- scans your '/src' folder for '\*.spec.js' files for defined tests
-- starts real Chrome engine
-- uses [chai-enzyme](https://github.com/producthunt/chai-enzyme) for assertions  
-  which is exposed to `global`
-
 As example to write your own tests, have a look at `/src/App.spec.js`  
-or check the API of [chai-enzyme](https://github.com/producthunt/chai-enzyme)
+For more information see [@viewar/webpack#karma](https://github.com/viewar/webpack#integration-tests-per-karma-webpack)
 
 ## Deployment
 

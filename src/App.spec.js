@@ -8,11 +8,13 @@ const { enzyme: { mount }, chai: { expect }} = global;
 describe('<App />', function() {
   let wrapper;
 
-  it('renders headline without errors', function() {
+  it('mounts without errors', function() {
     wrapper = mount(<App />);
+    // eslint-disable-next-line no-unused-expressions
+    expect(wrapper).to.exist;
   });
 
-  it('renders <h1 id="app_headline">ViewAR SDK</h1>', function() {
+  it('mounts with `<h1 id="app_headline">ViewAR SDK</h1>`', function() {
     expect(wrapper).to.have.descendants('#app_headline');
     expect(wrapper.find('h1')).to.contain('ViewAR SDK');
   });
