@@ -29,7 +29,7 @@ script:
 
 before_deploy:
   - npm i -g semantic-release
-  - npm i -g @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/git @semantic-release/github
+  - npm i -g @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/git @semantic-release/github semantic-release-slack-bot
 
 deploy:
   provider: script
