@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [1.5.1](https://github.com/viewar/viewar-boilerplate-react/compare/v1.5.0...v1.5.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* **mockMode:** upgrade '@viewar/webpack' to v1.5.4 ([00cbc5c](https://github.com/viewar/viewar-boilerplate-react/commit/00cbc5ca5fdea70f5e0a4033a3a097c71a6d929f)), closes [viewar/webpack#36](https://github.com/viewar/webpack/issues/36)
+
 # [1.5.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.4.0...v1.5.0) (2019-11-11)
 
 
