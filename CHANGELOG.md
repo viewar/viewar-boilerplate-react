@@ -1,6 +1,27 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [1.5.1](https://github.com/viewar/viewar-boilerplate-react/compare/v1.5.0...v1.5.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* **mockMode:** upgrade '@viewar/webpack' to v1.5.4 ([00cbc5c](https://github.com/viewar/viewar-boilerplate-react/commit/00cbc5ca5fdea70f5e0a4033a3a097c71a6d929f)), closes [viewar/webpack#36](https://github.com/viewar/webpack/issues/36)
+
+# [1.5.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.4.0...v1.5.0) (2019-11-11)
+
+
+### Bug Fixes
+
+* **render:** fix "functions are not valid as React children" ([ba0bbf7](https://github.com/viewar/viewar-boilerplate-react/commit/ba0bbf7a1b8c38f22cb0d78b8af92c8fc118297a))
+* **deps:** remove 'sematnic-release' modules from package.json ([efcff01](https://github.com/viewar/viewar-boilerplate-react/commit/efcff01c7c2366ac1f8467fdd92c4f11c1d2fef2))
+* **test:** run lint + karma on test script ([0ecbd22](https://github.com/viewar/viewar-boilerplate-react/commit/0ecbd2272abba2c385eaa70012f87c6ad5a1e279))
+
+
+### Features
+
+* **karma:** run integration tests via '@viewar/webpack/karma' ([#28](https://github.com/viewar/viewar-boilerplate-react/issues/28)) ([fb468db](https://github.com/viewar/viewar-boilerplate-react/commit/fb468db29e62d30fc7720afaefb1e7ced2756961))
+
 # [1.4.0](https://github.com/viewar/viewar-boilerplate-react/compare/v1.3.5...v1.4.0) (2019-11-09)
 
 ### Features
