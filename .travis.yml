@@ -1,39 +1,79 @@
-dist: trusty # needs Ubuntu Trusty
-# Note: if you switch to sudo: false, you'll need to launch Chrome with --no-sandbox.
-# See https://github.com/travis-ci/travis-ci/issues/8836
-language: node_js
-node_js:
-  - 12
-  - 11
-  - 10
-
-matrix:
-  fast_finish: true
-  allow_failures:
-    - node_js: 10
-  env:
-    NODE_ENV: test
+cache:
+  npm: true
+  directories:
+    - $HOME/.npm
+    - $HOME/build/$TRAVIS_REPO_SLUG/components/node_modules/
 
 branches:
   only:
     - master
     - next
     - develop
+  except:
+    - /^v[0-9]+\.[0-9]+\.[0-9]+$/
 
-install: npm install
+env: NODE_ENV=develop
+os:
+  - linux
+  - osx
+  - windows
 
+dist: trusty
+language: node_js
+node_js:
+  - 12
+  - 11
+  - 10
+
+install: npm ci
 script:
   - npm run lint
-  - npm run karma
   - npm run build
+  - npm run karma
 
-before_deploy:
-  - npm i -g semantic-release
-  - npm i -g @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/git @semantic-release/github
+stages:
+  - test
+  - release
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: npx semantic-release
-  on:
-    branch: next
+matrix:
+  fast_finish: true
+  allow_failures:
+    - node_js: 10
+    - os: osx
+    - os: windows
+
+jobs:
+  fast_finish: true
+  allow_failures:
+    - node_js: 10
+    - os: osx
+    - os: windows
+  exclude:
+    - os: osx
+    - os: windows
+  include:
+    - os: osx
+      node_js: 12
+      allow_failures: true
+      fast_finish: true
+    - os: windows
+      node_js: 12
+      allow_failures: true
+      fast_finish: true
+    - stage: release
+      if: branch = next AND type IN (push) AND tag IS blank AND (commit_message !~ /chore\(release\)/)
+      node_js: 12
+      script: skip
+      install:
+        - npm ci
+        - npm i -g semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/npm @semantic-release/git @semantic-release/github semantic-release-slack-bot
+      before_deploy:
+        - npm run build:package
+      deploy:
+        tags: false
+        provider: script
+        skip_cleanup: true
+        script: npx semantic-release
+        on:
+          branch: next
+          tags: false
