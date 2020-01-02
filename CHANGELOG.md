@@ -1,6 +1,17 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [1.5.2](https://github.com/viewar/viewar-boilerplate-react/compare/v1.5.1...v1.5.2) (2020-01-02)
+
+
+### Bug Fixes
+
+* **ci:** remove before_deploy ([5e05c4e](https://github.com/viewar/viewar-boilerplate-react/commit/5e05c4e30434c64cbe34ba8867107c9263618b7d))
+* **deps:** remove packages shipped by '@viewar/webpack' ([#40](https://github.com/viewar/viewar-boilerplate-react/issues/40)) ([c811a6b](https://github.com/viewar/viewar-boilerplate-react/commit/c811a6b8c4b33ef48952d475d0918b149e3a6907))
+* **ci:** unignore package-lock for `npm ci` ([a5ac507](https://github.com/viewar/viewar-boilerplate-react/commit/a5ac50789c736197de3cd8436f32a32ce062e68e))
+* **core:** update '@viewar/webpack' for coreMode fix ([84b5e43](https://github.com/viewar/viewar-boilerplate-react/commit/84b5e43436d27c8bc6c8c30a2b4bc2c1e3eaa616))
+* **mockMode:** upgrade '@viewar/webpack' to v1.5.4 ([f9263f6](https://github.com/viewar/viewar-boilerplate-react/commit/f9263f691a220f00726442ebdc64ce21e1c9d0f1)), closes [viewar/webpack#36](https://github.com/viewar/webpack/issues/36)
+
 ## [1.5.1](https://github.com/viewar/viewar-boilerplate-react/compare/v1.5.0...v1.5.1) (2019-11-11)
 
 
