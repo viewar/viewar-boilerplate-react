@@ -27,7 +27,6 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "@viewar/config-eslint": "^1.10.0",
-    "@viewar/webpack": "^1.9.2",
     "body-parser": "^1.19.0",
     "chalk": "^3.0.0",
     "eslint": "^6.8.0",
@@ -45,6 +44,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
+    "@viewar/webpack": "^1.9.3",
     "fastclick": "^1.0.6",
     "normalize.css": "^8.0.1",
     "react": "^16.11.0",
