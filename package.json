@@ -49,7 +49,7 @@
     "normalize.css": "^8.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "viewar-api": "^1.1.0",
+    "viewar-api": "^1.1.1",
     "viewar-core": "^11.66.0"
   }
 }
