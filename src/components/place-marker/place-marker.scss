@@ -1,0 +1,30 @@
+.placeContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.placeMarker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 1000px;
+  transform: translate(-50%, -2rem);
+  transition: left 198ms, top 198ms, transform 198ms;
+}
+
+.label {
+  height: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: default;
+}

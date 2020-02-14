@@ -55,7 +55,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "recompose": "^0.30.0",
-    "viewar-api": "^0.50.1",
-    "viewar-core": "^11.41.1"
+    "viewar-api": "^1.3.3",
+    "viewar-core": "^11.68.1"
   }
 }

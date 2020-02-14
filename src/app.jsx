@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import global from './index.scss';
-import { OffscreenArrow } from './components';
+import { OffscreenArrow, PlaceMarker } from './components';
 
 export default ({
     direction,
@@ -8,7 +8,8 @@ export default ({
 }) => (
         <div>
             <div className={global.Container}>
-                <OffscreenArrow label={'>'} />
+                {/* <OffscreenArrow label={'>'} /> */}
+                <PlaceMarker xPos={0} yPos={0} yPos={0} label={'*'} />
             </div>
         </div>
     );

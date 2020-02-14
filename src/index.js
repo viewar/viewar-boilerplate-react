@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './remote-console';
 
 import viewarApi from 'viewar-api';
 
 import './index.scss';
 
 import App from './app';
+if (process.env.NODE_ENV !== 'production') {
+  require('./remote-console');
+}
+
 (async function() {
   window.api = await viewarApi.init({appId: 'viewar.VASB6762Test'});
 
   const WCSModel = await viewarApi.modelManager.fetchModelFromRepository(
-    '19741'
+    '19741',
   );
 
   await viewarApi.sceneManager.insertModel(WCSModel, {
@@ -43,12 +46,4 @@ import App from './app';
       render(App);
     });
   }
-
-  console.log('log', {
-    'a': 1234,
-    'b': '5678',
-  });
-  console.info('info');
-  console.warn('warn');
-  console.error('error');
 })();
