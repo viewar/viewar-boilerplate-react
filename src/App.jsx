@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import viewarApi from 'viewar-api';
 
-class App extends Component {
+class App extends PureComponent {
   async componentDidMount() {
     // load demo 3d model
     const sheepModel = await viewarApi.modelManager.fetchModelFromRepository('20');
@@ -22,7 +22,8 @@ class App extends Component {
 
   render() {
     return (
-      <h1 id="app_headline">ViewAR SDK</h1>);
+      <h1 id="app_headline">ViewAR SDK</h1>
+    );
   }
 }
 
