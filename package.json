@@ -15,12 +15,6 @@
   },
   "author": "Karl Hofer <kh@viewar.com>",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
   "repository": "https://github.com/viewar/viewar-boilerplate-react",
   "devDependencies": {
     "@babel/core": "^7.8.7",
