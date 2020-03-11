@@ -41,7 +41,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
-    "@viewar/webpack": "^1.9.3",
+    "@viewar/webpack": "^1.11.0",
     "fastclick": "^1.0.6",
     "normalize.css": "^8.0.1",
     "react": "^16.13.0",
