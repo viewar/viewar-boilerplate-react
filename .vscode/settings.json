@@ -18,5 +18,13 @@
   "vsprettier.useStyleLint": true,
   "vsprettier.requireConfig": true,
   "eslint.lintTask.enable": true,
-  "eslint.workingDirectories": [{ "directory": ".", "changeProcessCWD": true }]
+  "eslint.workingDirectories": [
+    {
+      "directory": ".",
+      "changeProcessCWD": true
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
